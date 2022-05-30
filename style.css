@@ -76,14 +76,15 @@ input, button{
   display: flex;
 }
 
-.task-name, .task-input {
+.tasks__name, .tasks__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
 }
 
-.task-input {
+.tasks__input {
   margin: 0;
+  width: 226px;
   font-size: 18px;
   line-height: 18px;
   height: 21px;
@@ -95,7 +96,7 @@ input, button{
   color: #888;
 }
 
-.task-input:focus {
+.tasks__input:focus {
   color: #333;
 }
 
@@ -136,14 +137,10 @@ input, button{
   margin: 0 10px;
 }
 
-.task-name {
+.tasks__name {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
-}
-
-.task-input {
   width: 226px;
 }
 
@@ -159,22 +156,22 @@ input, button{
 
 /* Completed */
 
-#completed-tasks .task-name {
+#completed-tasks .tasks__name {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
 
-.tasks__item .task-input {
+.tasks__item .tasks__input {
   display: none;
 }
 
-.tasks__item-edit .task-input {
+.tasks__item-edit .tasks__input {
   display: inline-block;
   width: 224px;
 }
 
-.tasks__item-edit .task-name {
+.tasks__item-edit .tasks__name {
   display: none;
 }

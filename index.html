@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" media="screen">
     <title>Todo App</title>
   </head>
+
   <body class="page">
     <header class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix">
@@ -18,7 +19,7 @@
       <section class="add-task">
         <h3 class="section-title">Add Item</h3>
           <div class="add-task-wrapper">
-            <input class="task-input" id="new-task" type="text">
+            <input class="tasks__input" id="new-task" type="text">
             <button class="btn">Add</button>
           </div>
       </section>
@@ -28,17 +29,17 @@
         <ul class="tasks" id="todo-tasks">
           <li class="tasks__item">
             <input class="checkbox" type="checkbox">
-            <label class="task-name">Pay Bills</label>
-            <input class="task-input" type="text">
+            <label class="tasks__name">Pay Bills</label>
+            <input class="tasks__input" type="text">
             <button class="btn btn__edit">Edit</button>
             <button class="btn btn__delete">
               <img class="btn__image" src="./remove.svg" alt="Remove Button">
             </button>
           </li>
-          <li class="tasks__item editMode">
+          <li class="tasks__item tasks__item-edit">
             <input class="checkbox" type="checkbox">
-            <label class="task-name">Go Shopping</label>
-            <input type="text" class="task-input" value="Go Shopping" >
+            <label class="tasks__name">Go Shopping</label>
+            <input type="text" class="tasks__input" value="Go Shopping" >
             <button class="btn btn__edit">Save</button>
             <button class="btn btn__delete">
               <img class="btn__image" src="./remove.svg" alt="Remove Button">
@@ -52,8 +53,8 @@
         <ul class="tasks" id="completed-tasks">
           <li class="tasks__item">
             <input class="checkbox" type="checkbox" checked>
-            <label class="task-name">See the Doctor</label>
-            <input type="text" class="task-input">
+            <label class="tasks__name">See the Doctor</label>
+            <input type="text" class="tasks__input">
             <button class="btn btn__edit">Edit</button>
             <button class="btn btn__delete">
               <img class="btn__image" src="./remove.svg" alt="Remove Button">
