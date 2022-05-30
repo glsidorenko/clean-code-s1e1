@@ -76,7 +76,8 @@ input, button{
   display: flex;
 }
 
-.tasks__name, .tasks__input {
+.tasks__name, 
+.tasks__input {
   width: 56%;
   display: inline-block;
   flex-grow: 1;
